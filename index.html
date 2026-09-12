@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>D3 Responsives Horizontales Stacked Bar Chart</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 20px;
+      background-color: #f9f9f9;
+    }
+    #chart-container {
+      width: 100%;
+      max-width: 900px; /* Optionale maximale Breite */
+      margin: 0 auto;
+      background: white;
+      padding: 10px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+      border-radius: 8px;
+    }
+    .axis text {
+      font-size: 12px;
+    }
+    .tooltip {
+      position: absolute;
+      padding: 8px;
+      background: rgba(0, 0, 0, 0.8);
+      color: white;
+      border-radius: 4px;
+      font-size: 12px;
+      pointer-events: none;
+      opacity: 0;
+      transition: opacity 0.2s;
+    }
+  </style>
+  <!-- D3.js v7 einbinden -->
+  <script src="https://d3js.org"></script>
+</head>
+<body>
+
+  <div id="chart-container"></div>
+  <div class="tooltip" id="tooltip"></div>
+
+  <script src="chart.js"></script>
+</body>
+</html>
